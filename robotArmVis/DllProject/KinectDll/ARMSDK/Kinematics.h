@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <iostream>
+#include <opencv.hpp>
 #include "RobotInfo.h"
 #include "Error.h"
 
@@ -18,6 +19,10 @@ namespace armsdk
 	//	Pose3D_Quaternion currentpose_Quaternion;
 		vecd currentangle;
 		unsigned int DOF;
+		
+		cv::Mat ThumbMat;
+		cv::Mat LeftUpperMat;
+		cv::Mat RightUpperMat;
 
 	public:
 		Kinematics();
